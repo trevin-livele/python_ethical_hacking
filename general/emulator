@@ -1,0 +1,6 @@
+sudo apt-get install scrcpy
+192.168.1.102
+adb tcpip 9999
+adb connect 1p : 9999
+adb devices
+scrcpy

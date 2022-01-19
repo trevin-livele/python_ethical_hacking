@@ -1,0 +1,12 @@
+pip3
+python3
+git clone https://github.com/sundowndev/PhoneInfoga
+cd PhoneInfoga
+ls
+python3 -m pip install -r requirements.txt
+cp config.example.py config.py
+python3 PhoneInfoga.py -v
+python3 PhoneInfoga.py -h
+python3 PhoneInfoga.py -n 0792691810 --osint
+n
+#inteltechniques.com

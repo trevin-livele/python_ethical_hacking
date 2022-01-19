@@ -1,0 +1,33 @@
+iwconfig> getting wifi card name
+ifconfig wlan0down
+macchanger --help
+macchanger --random wlan0
+ifconfig wlan0 up
+ifconfig wlan0 
+
+/*enabling monitor mode manually*/
+iwconfig wlan0
+ifconfig wlan0 down
+iwconfig wlan0 monitor mode
+ifconfig wlan up
+iwconfig wlan0
+airodump-ng wlan0
+
+
+/* another way of enabling monitor mode*/
+airmon-ng
+ifconfig wlan0own
+airmon-ng check kill
+airmong-ng start wlan0
+ifconfig wlan0mon
+
+
+/*listing networks around us*/
+airodump-ng mon0
+
+ctrl + c >to stop sniffing
+BSSID is the mac adress
+PWR is how far the access point is.
+BEACONS is communicating
+
+=>airodump-ng --channel 2 --bssid(mac adress write(file to be saved to eg test-upc)mon0

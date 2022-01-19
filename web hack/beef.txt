@@ -1,0 +1,19 @@
+beef
+cd /usr/share/beef-xss/
+ls
+ls-l 
+./beef 
+
+#in browser
+127.0.0.1:3000/ui/panel
+
+
+#new terminal
+cd /var/www
+ls
+gedit index.html
+
+service apache2 start
+
+in browser paste the ip
+back in beef you will see an online browser

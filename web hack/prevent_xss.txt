@@ -1,0 +1,1 @@
+https://www/owasp.org/index.php/xss_(cross_site_scripting)_prevention_cheat_sheet

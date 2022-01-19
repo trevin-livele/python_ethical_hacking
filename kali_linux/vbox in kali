@@ -1,0 +1,14 @@
+apt-get update && apt-get upgrade
+apt - cache search header | grep-i linux
+uname-r
+apt-get install [copy paste meta package]
+apt-get update && apt-get upgrade
+reboot
+
+cd /media/cdromo/
+ls
+cp vboxlinuxadditions.run /root/Desktop/
+cd /root/Desktop/
+ls
+./ vboxlinuxAdditions.run
+reboot

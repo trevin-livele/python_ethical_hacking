@@ -1,0 +1,34 @@
+ip adress
+domain name info
+tech used
+other websites on same server
+DNS Records
+unlisted files su domains directories
+
+who is lookup
+gives info about owner of the target
+http://whois.domaintools.com/
+
+netcraft site report
+shows tecnologies used on the target
+http://toolbar.netcraft.com/site_report?url=
+
+robotex DNS lookupshows comprehensive info about the target websites
+https://www.robotex.com/
+
+search in exploit database wordpress
+bing.com/ip of target websites
+
+
+discouvering subdomains
+git clone https://github.com/gue/foweb/knock.git
+cd knock/knock.py
+python knock.py[target]
+
+
+finding files and directories
+man dirb
+dirb target website
+
+if you have a custom wordlist
+dirb http://10.20.14.204/mutilidae/root/wordlisst.txt

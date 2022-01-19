@@ -1,0 +1,20 @@
+sudo apt-get update; sudo apt-get upgrade
+sudo apt-get install synaptic
+sudo apt-get install git -y
+sudo apt-get install wget -y
+sudo apt-get install libreoffice -y
+sudo apt-get install gimp -y
+sudo apt-get install kdenlive -y
+sudo apt-get install vlc -y
+sudo apt-get install android-tools-adb -y
+sudo apt-get install neofetch && sudo apt-get install htop-y
+sudo apt install tor torbrowser-launcher tor browser-launcher
+sudo apt-get install unzip
+sudo apt-get install unrar
+sudo apt-get install terminator
+
+
+
+#neofetch
+#htop
+#kali-undercover

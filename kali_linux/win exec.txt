@@ -1,0 +1,5 @@
+navigate to its location
+ls
+cd into it
+ls
+wine followed by exe

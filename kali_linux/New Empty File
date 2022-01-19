@@ -1,0 +1,3 @@
+sudo apt-get install alien dpkg-dev debhelper build-essential
+sudo alien packagename.rpm
+sudo dpkg -i packagename.deb

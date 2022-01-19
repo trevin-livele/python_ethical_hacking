@@ -1,0 +1,12 @@
+exiftool
+gzip
+bzipz
+strings(bitnulis)
+zip
+unzip
+file file
+cat file
+base 64 file
+base 64 -d test
+base 64 -d test | rev
+python -m http.server 80

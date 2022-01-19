@@ -1,0 +1,5 @@
+cd
+gitclone https://github.com/arismelachroinas/lscript.git
+cd lscript
+chmod + x install.sh
+./install.sh

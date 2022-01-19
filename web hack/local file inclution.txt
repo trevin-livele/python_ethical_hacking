@@ -1,0 +1,11 @@
+/etc/passwd <=directory with passsowrds
+
+in terminal
+cat/etc/passwords
+
+#shell from local file inclution
+/proc/self/environ
+/var/log/auth.log
+/var/log/apache2/access.log 
+
+cat /proc/self/environ 

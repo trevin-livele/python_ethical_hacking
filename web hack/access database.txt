@@ -1,0 +1,6 @@
+sql_console-h
+sql_dump -h
+
+sql_dump_vector[vector]-host [HOST]-path[location to store date][DBNAME][username][pasword]
+
+sql_dump -host localhost-lpath/root/dvwa-data.txt dvwa root''

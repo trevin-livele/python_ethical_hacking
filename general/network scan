@@ -1,0 +1,9 @@
+#nmap scan
+ip addr
+nmap 192.168.0.1/24
+
+
+#new terminal
+sudo arp-scan --interface --localnet
+
+

